@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{442B9ED2-A644-4B0C-B866-98C241E7FFFC}</ProjectGuid>
+    <RootNamespace>test</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LibraryPath>C:\vtk\bin\lib\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>C:\vtk\bin1\lib\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\vtk\bin1\Filters\Sources;C:\vtk\VTK-6.1.0\Filters\Sources;C:\vtk\bin1\Common\ComputationalGeometry;C:\vtk\VTK-6.1.0\Common\ComputationalGeometry;C:\vtk\bin1\Common\DataModel;C:\vtk\VTK-6.1.0\Common\DataModel;C:\vtk\bin1\Common\Math;C:\vtk\VTK-6.1.0\Common\Math;C:\vtk\bin1\Common\Core;C:\vtk\VTK-6.1.0\Common\Core;C:\vtk\bin1\Utilities\KWSys;C:\vtk\VTK-6.1.0\Utilities\KWSys;C:\vtk\bin1\Common\Misc;C:\vtk\VTK-6.1.0\Common\Misc;C:\vtk\bin1\Common\System;C:\vtk\VTK-6.1.0\Common\System;C:\vtk\bin1\Common\Transforms;C:\vtk\VTK-6.1.0\Common\Transforms;C:\vtk\bin1\Filters\General;C:\vtk\VTK-6.1.0\Filters\General;C:\vtk\bin1\Filters\Core;C:\vtk\VTK-6.1.0\Filters\Core;C:\vtk\bin1\Common\ExecutionModel;C:\vtk\VTK-6.1.0\Common\ExecutionModel;C:\vtk\bin1\Interaction\Style;C:\vtk\VTK-6.1.0\Interaction\Style;C:\vtk\bin1\Filters\Extraction;C:\vtk\VTK-6.1.0\Filters\Extraction;C:\vtk\bin1\Filters\Statistics;C:\vtk\VTK-6.1.0\Filters\Statistics;C:\vtk\bin1\Imaging\Fourier;C:\vtk\VTK-6.1.0\Imaging\Fourier;C:\vtk\bin1\Imaging\Core;C:\vtk\VTK-6.1.0\Imaging\Core;C:\vtk\bin1\ThirdParty\alglib;C:\vtk\VTK-6.1.0\ThirdParty\alglib;C:\vtk\bin1\Rendering\Core;C:\vtk\VTK-6.1.0\Rendering\Core;C:\vtk\bin1\Filters\Geometry;C:\vtk\VTK-6.1.0\Filters\Geometry;C:\vtk\bin1\Rendering\OpenGL;C:\vtk\VTK-6.1.0\Rendering\OpenGL;C:\vtk\bin1\Imaging\Hybrid;C:\vtk\VTK-6.1.0\Imaging\Hybrid;C:\vtk\bin1\IO\Image;C:\vtk\VTK-6.1.0\IO\Image;C:\vtk\bin1\Utilities\DICOMParser;C:\vtk\VTK-6.1.0\Utilities\DICOMParser;C:\vtk\bin1\IO\Core;C:\vtk\VTK-6.1.0\IO\Core;C:\vtk\bin1\ThirdParty\zlib;C:\vtk\VTK-6.1.0\ThirdParty\zlib;C:\vtk\bin1\Utilities\MetaIO\vtkmetaio;C:\vtk\bin1\Utilities\MetaIO;C:\vtk\VTK-6.1.0\Utilities\MetaIO;C:\vtk\bin1\ThirdParty\jpeg;C:\vtk\VTK-6.1.0\ThirdParty\jpeg;C:\vtk\bin1\ThirdParty\png;C:\vtk\VTK-6.1.0\ThirdParty\png;C:\vtk\bin1\ThirdParty\tiff;C:\vtk\VTK-6.1.0\ThirdParty\tiff;C:\vtk\bin1\Utilities\ParseOGLExt;C:\vtk\VTK-6.1.0\Utilities\ParseOGLExt;C:\vtk\bin1\Utilities\EncodeString;C:\vtk\VTK-6.1.0\Utilities\EncodeString;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;vtkRenderingCore_INCLUDE="C:/vtk/bin1/CMakeFiles/vtkRenderingCore_AUTOINIT_vtkInteractionStyle_vtkRenderingOpenGL.h";CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;vtkFiltersSources-6.1.lib;vtkCommonComputationalGeometry-6.1.lib;vtkCommonDataModel-6.1.lib;vtkCommonMath-6.1.lib;vtkCommonCore-6.1.lib;vtksys-6.1.lib;vtkCommonMisc-6.1.lib;vtkCommonSystem-6.1.lib;vtkCommonTransforms-6.1.lib;vtkFiltersGeneral-6.1.lib;vtkFiltersCore-6.1.lib;vtkCommonExecutionModel-6.1.lib;vtkInteractionStyle-6.1.lib;vtkFiltersExtraction-6.1.lib;vtkFiltersStatistics-6.1.lib;vtkImagingFourier-6.1.lib;vtkImagingCore-6.1.lib;vtkalglib-6.1.lib;vtkRenderingCore-6.1.lib;vtkFiltersGeometry-6.1.lib;vtkRenderingOpenGL-6.1.lib;vtkImagingHybrid-6.1.lib;vtkIOImage-6.1.lib;vtkDICOMParser-6.1.lib;vtkIOCore-6.1.lib;vtkzlib-6.1.lib;vtkmetaio-6.1.lib;vtkjpeg-6.1.lib;vtkpng-6.1.lib;vtktiff-6.1.lib;vtkRenderingCore-6.1.lib;vtkFiltersSources-6.1.lib;vtkFiltersExtraction-6.1.lib;vtkFiltersGeneral-6.1.lib;vtkCommonComputationalGeometry-6.1.lib;vtkFiltersStatistics-6.1.lib;vtkImagingFourier-6.1.lib;vtkalglib-6.1.lib;vtkFiltersGeometry-6.1.lib;vtkFiltersCore-6.1.lib;vtkImagingCore-6.1.lib;vtkCommonExecutionModel-6.1.lib;vtkCommonDataModel-6.1.lib;vtkCommonMisc-6.1.lib;vtkCommonSystem-6.1.lib;vtksys-6.1.lib;ws2_32.lib;Psapi.lib;vtkCommonTransforms-6.1.lib;vtkCommonMath-6.1.lib;vtkCommonCore-6.1.lib;comctl32.lib;wsock32.lib;vtkzlib-6.1.lib;vtkjpeg-6.1.lib;glu32.lib;opengl32.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\vtk\bin\Filters\Sources;C:\vtk\VTK-6.1.0\Filters\Sources;C:\vtk\bin\Common\ComputationalGeometry;C:\vtk\VTK-6.1.0\Common\ComputationalGeometry;C:\vtk\bin\Common\DataModel;C:\vtk\VTK-6.1.0\Common\DataModel;C:\vtk\bin\Common\Math;C:\vtk\VTK-6.1.0\Common\Math;C:\vtk\bin\Common\Core;C:\vtk\VTK-6.1.0\Common\Core;C:\vtk\bin\Utilities\KWSys;C:\vtk\VTK-6.1.0\Utilities\KWSys;C:\vtk\bin\Common\Misc;C:\vtk\VTK-6.1.0\Common\Misc;C:\vtk\bin\Common\System;C:\vtk\VTK-6.1.0\Common\System;C:\vtk\bin\Common\Transforms;C:\vtk\VTK-6.1.0\Common\Transforms;C:\vtk\bin\Filters\General;C:\vtk\VTK-6.1.0\Filters\General;C:\vtk\bin\Filters\Core;C:\vtk\VTK-6.1.0\Filters\Core;C:\vtk\bin\Common\ExecutionModel;C:\vtk\VTK-6.1.0\Common\ExecutionModel;C:\vtk\bin\Interaction\Style;C:\vtk\VTK-6.1.0\Interaction\Style;C:\vtk\bin\Filters\Extraction;C:\vtk\VTK-6.1.0\Filters\Extraction;C:\vtk\bin\Filters\Statistics;C:\vtk\VTK-6.1.0\Filters\Statistics;C:\vtk\bin\Imaging\Fourier;C:\vtk\VTK-6.1.0\Imaging\Fourier;C:\vtk\bin\Imaging\Core;C:\vtk\VTK-6.1.0\Imaging\Core;C:\vtk\bin\ThirdParty\alglib;C:\vtk\VTK-6.1.0\ThirdParty\alglib;C:\vtk\bin\Rendering\Core;C:\vtk\VTK-6.1.0\Rendering\Core;C:\vtk\bin\Filters\Geometry;C:\vtk\VTK-6.1.0\Filters\Geometry;C:\vtk\bin\Rendering\OpenGL;C:\vtk\VTK-6.1.0\Rendering\OpenGL;C:\vtk\bin\Imaging\Hybrid;C:\vtk\VTK-6.1.0\Imaging\Hybrid;C:\vtk\bin\IO\Image;C:\vtk\VTK-6.1.0\IO\Image;C:\vtk\bin\Utilities\DICOMParser;C:\vtk\VTK-6.1.0\Utilities\DICOMParser;C:\vtk\bin\IO\Core;C:\vtk\VTK-6.1.0\IO\Core;C:\vtk\bin\ThirdParty\zlib;C:\vtk\VTK-6.1.0\ThirdParty\zlib;C:\vtk\bin\Utilities\MetaIO\vtkmetaio;C:\vtk\bin\Utilities\MetaIO;C:\vtk\VTK-6.1.0\Utilities\MetaIO;C:\vtk\bin\ThirdParty\jpeg;C:\vtk\VTK-6.1.0\ThirdParty\jpeg;C:\vtk\bin\ThirdParty\png;C:\vtk\VTK-6.1.0\ThirdParty\png;C:\vtk\bin\ThirdParty\tiff;C:\vtk\VTK-6.1.0\ThirdParty\tiff;C:\vtk\bin\Utilities\ParseOGLExt;C:\vtk\VTK-6.1.0\Utilities\ParseOGLExt;C:\vtk\bin\Utilities\EncodeString;C:\vtk\VTK-6.1.0\Utilities\EncodeString;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;vtkFiltersSources-6.1.lib;vtkCommonComputationalGeometry-6.1.lib;vtkCommonDataModel-6.1.lib;vtkCommonMath-6.1.lib;vtkCommonCore-6.1.lib;vtksys-6.1.lib;vtkCommonMisc-6.1.lib;vtkCommonSystem-6.1.lib;vtkCommonTransforms-6.1.lib;vtkFiltersGeneral-6.1.lib;vtkFiltersCore-6.1.lib;vtkCommonExecutionModel-6.1.lib;vtkInteractionStyle-6.1.lib;vtkFiltersExtraction-6.1.lib;vtkFiltersStatistics-6.1.lib;vtkImagingFourier-6.1.lib;vtkImagingCore-6.1.lib;vtkalglib-6.1.lib;vtkRenderingCore-6.1.lib;vtkFiltersGeometry-6.1.lib;vtkRenderingOpenGL-6.1.lib;vtkImagingHybrid-6.1.lib;vtkIOImage-6.1.lib;vtkDICOMParser-6.1.lib;vtkIOCore-6.1.lib;vtkzlib-6.1.lib;vtkmetaio-6.1.lib;vtkjpeg-6.1.lib;vtkpng-6.1.lib;vtktiff-6.1.lib;ws2_32.lib;Psapi.lib;comctl32.lib;wsock32.lib;glu32.lib;opengl32.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="源.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
